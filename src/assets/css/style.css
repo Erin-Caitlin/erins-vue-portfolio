@@ -23,7 +23,7 @@
     display: none;
 }
 
-:is(.navbar) {
+:is(.navbar, footer) {
     background-color: var(--awesome);
 }
 
@@ -52,6 +52,11 @@ nav a.router-link-exact-active {
     color: #42b983;
 }
 
+/* Footer */
+footer {
+    padding-top: 2rem;
+}
+
 /* All images */
 img {
     aspect-ratio: 1;
@@ -62,6 +67,12 @@ img {
 /* logo */
 img[alt='logo'] {
     width: 5rem;
+}
+
+/* wrapper */
+:is(.wrapper) {
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
 /* media query */
