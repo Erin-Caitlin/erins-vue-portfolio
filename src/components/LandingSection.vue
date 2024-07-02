@@ -5,7 +5,7 @@
         <div class="col">
             <div id="details">
                 <h1 class="display-1">Erin Caitlin Williams</h1>
-                <p v-if="title" class="lead">{{ title }}</p>
+                <p v-if="jobTitle" class="lead">{{ jobTitle[0].title }}</p>
                 <Spinner v-else/>
             </div>
             <div id="about-btn">
@@ -21,7 +21,7 @@ import Spinner from './Spinner.vue'
 import {computed, onMounted} from 'vue'
 import {useStore} from 'vuex'
 const store = useStore()
-    const title = computed(() => store.state.jobTitle)
+    const jobTitle = computed(() => store.state.jobTitle)
 
     onMounted(() => {
         store.dispatch('fetchJobTitle')
