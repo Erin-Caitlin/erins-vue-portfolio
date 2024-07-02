@@ -16,7 +16,7 @@
 
     </section>
     <section class="row" id="reachMe">
-
+      <ReachMeSection />
     </section>
   </div>
 </template>
@@ -25,10 +25,11 @@
 import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
+import ReachMeSection from '@/components/ReachMeSection.vue'
 export default {
   name: 'HomeView',
   components: {
-    LandingSection, AboutSection, ResumeSection
+    LandingSection, AboutSection, ResumeSection, ReachMeSection
   }
 }
 </script>
