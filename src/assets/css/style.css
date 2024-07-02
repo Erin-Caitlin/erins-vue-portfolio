@@ -1,5 +1,5 @@
 /* Bootstrap icon */
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
@@ -12,6 +12,7 @@
 
 /* App */
 #app {
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -61,7 +62,7 @@ footer {
 img {
     aspect-ratio: 1;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     overflow: hidden;
 }
 
@@ -69,6 +70,7 @@ img {
 img[alt='logo'] {
     width: 5rem;
 }
+
 
 /* wrapper */
 :is(.wrapper) {
@@ -89,3 +91,40 @@ img[alt='logo'] {
     background-color: #ffffff81;
     border: none;
 }
+
+
+/* Reach Me Page */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bolder;
+}
+
+#name,
+#email,
+#message{
+    padding: .5rem;
+    width: 50rem;
+    border-radius: .3rem;
+    background-color: beige;
+    color: var(--primary);
+    border-color: var(--alternative);
+}
+
+/* Contact form placeholder */
+/* ::placeholder {
+    color: var(--secondary);
+} */
+
+#btn-send,
+#btn-clear {
+    padding: 1rem;
+    border-radius: .2rem;
+    width: 10rem;
+    background-color: beige;
+    color: var(--primary);
+    border-color: var(--alternative);
+}
+

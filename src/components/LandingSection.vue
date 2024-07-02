@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="landing">
+  <div class="container">
     <div class="row vh-100 align-items-center">
         <div class="col"><img src="https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image24.jpg" alt="profile" class="img-fluid w-75 shadow rounded-top" loading="lazy"></div>
         <div class="col">
