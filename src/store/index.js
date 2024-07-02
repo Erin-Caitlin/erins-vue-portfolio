@@ -124,7 +124,7 @@ export default createStore({
       } catch (e) {
         Swal.fire ({
           title: "Error",
-          text: "Failed to fetch data - skilss",
+          text: "Failed to fetch data - skills",
           icon: "error",
           timer: 2000
         })

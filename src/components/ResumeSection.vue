@@ -26,10 +26,7 @@
                 </template>
             </Card>
         </div>
-        <div v-else class="d-flex justify-content-center">
-            <div class="spinner-border" role="status">
-            </div>
-        </div>
+        <Spinner v-else />
     </div>
 </template>
 <script>
