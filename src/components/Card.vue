@@ -20,6 +20,7 @@
 <style scoped>
 
 .card {
+    margin: 1rem;
     width: 22rem;
     column-gap: 5rem;
 }

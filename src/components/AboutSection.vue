@@ -36,7 +36,6 @@
       height: 100vh;
       background-blend-mode: soft-light;
       border-radius: .5rem;
-  
   }
   #info {
       margin: 2rem auto 2rem;
