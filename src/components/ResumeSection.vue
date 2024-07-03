@@ -3,6 +3,7 @@
         <div class="row">
             <h2 class="display-2">Resume</h2>
         </div>
+        <div class="row" resume>
         <div class="row gap-2 justify-content-center" v-if="education?.length">
             <Card v-for="education in education" :key="education.id">
                 <template #cardHeader>
@@ -28,6 +29,7 @@
         </div>
         <Spinner v-else />
     </div>
+</div>
 </template>
 <script>
 import Card from '@/components/Card.vue';
@@ -50,4 +52,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+[resume] {
+    display: flex;
+}
+</style>

@@ -44,7 +44,7 @@ export default {
     border-radius: .5rem;
 }
 
-#icon {
-    font-size: large;
-}
+/* #icon {
+    font-size: 2rem;
+} */
 </style>
