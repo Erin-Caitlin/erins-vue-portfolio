@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container-fluid">
+  <div class="container-fluid" nav-links>
     <router-link class="navbar-brand" to="/"><img src="https://erin-caitlin.github.io/all-images/portfolio/main-logo.png" alt="logo" class="img-fluid" loading="lazy"></router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
