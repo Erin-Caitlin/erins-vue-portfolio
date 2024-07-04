@@ -16,7 +16,7 @@
       <TestimonialsSection />
     </section>
     <section class="row" id="projects">
-
+      <ProjectsSection />
     </section>
     <section class="row" id="reachMe">
       <ReachMeSection />
@@ -29,12 +29,13 @@ import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
-import ReachMeSection from '@/components/ReachMeSection.vue'
 import TestimonialsSection from '@/components/TestimonialsSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import ReachMeSection from '@/components/ReachMeSection.vue'
 export default {
   name: 'HomeView',
   components: {
-    LandingSection, AboutSection, ResumeSection, SkillsSection,TestimonialsSection, ReachMeSection
+    LandingSection, AboutSection, ResumeSection, SkillsSection,TestimonialsSection, ProjectsSection, ReachMeSection
   }
 }
 </script>

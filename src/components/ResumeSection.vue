@@ -53,7 +53,14 @@ export default {
 </script>
 
 <style scoped>
-[resume] {
+/* [resume] {
     display: flex;
+} */
+
+.img-fluid {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    height: 9rem;
 }
 </style>
