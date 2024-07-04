@@ -3,6 +3,15 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 :root {
     --primary: rgb(0, 0, 0);
     --secondary: #ffffff;
@@ -17,6 +26,8 @@
     text-align: center;
     color: var(--primary);
     background-color: var(--alternative);
+    overflow: hidden;
+    
 }
 
 ::-webkit-scrollbar {
@@ -49,14 +60,22 @@ nav a {
     color: var(--primary);
 }
 
-section {
-    scroll-margin-block: 6rem;
+.nav-links {
+    width: 95%;
 }
+
+
+/* section {
+    scroll-margin-block: 1rem;
+} */
 /* Footer */
 footer {
     padding-top: 2rem;
 }
 
+.container-fluid{
+    padding: 0px !important;
+}
 /* All images */
 img {
     aspect-ratio: 1;
@@ -69,7 +88,6 @@ img {
 img[alt='logo'] {
     width: 5rem;
 }
-
 
 /* wrapper */
 :is(.wrapper) {
@@ -91,21 +109,22 @@ img[alt='logo'] {
     border: none;
 }
 
-
 /* Reach Me Page */
-#contact-form {
+#contact-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     font-weight: bolder;
+    justify-content: start;
 }
+
 
 #name,
 #email,
 #message{
     padding: .5rem;
-    width: 50rem;
+    width: 20rem;
     border-radius: .3rem;
     background-color: beige;
     color: var(--primary);
@@ -133,11 +152,10 @@ img[alt='logo'] {
 }
 
 /* Animation */
+/* Landing */
 .animate__animated.animate__fadeInTopLeft {
     --animate-duration: 2s;
   }
-  
-  /* This changes all the animations globally */
   :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;

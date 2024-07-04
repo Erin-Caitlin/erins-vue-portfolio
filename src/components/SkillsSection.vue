@@ -35,13 +35,15 @@ export default {
 </script>
 <style scoped>
 [skill] {
-    margin: 2rem;
+    margin: 2rem auto 2rem;
     background: rgb(177, 148, 148)
     url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image31.jpg) no-repeat top;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     background-blend-mode: soft-light;
     border-radius: .5rem;
+    padding: 0;
+
 }
 
 /* #icon {

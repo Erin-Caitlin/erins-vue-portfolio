@@ -33,7 +33,7 @@
       url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg)
       no-repeat center ;
       background-size: cover;
-      height: 100vh;
+      /* height: 100vh; */
       background-blend-mode: soft-light;
       border-radius: .5rem;
   }
@@ -44,7 +44,8 @@
       justify-content: center;
       align-content: center;
       gap: .4rem;
-      background: rgba(255, 255, 255, 0.221) ;
-      border-radius: .4rem;
+      /* background: rgba(255, 255, 255, 0.221) ; */
+      /* border-radius: .4rem; */
+      width: 70%;
   }
   </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container-fluid">
     <section class="row" id="landing">
       <LandingSection />
     </section>
@@ -39,3 +39,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

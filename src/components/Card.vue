@@ -21,8 +21,8 @@
 
 .card {
     margin: 1rem;
-    width: 22rem;
-    column-gap: 5rem;
+    width: 20rem;
+    /* column-gap: 5rem; */
 }
 
 </style>
