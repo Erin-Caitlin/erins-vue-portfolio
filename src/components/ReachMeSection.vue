@@ -17,10 +17,6 @@
         </div>
         </form>
         </div>
-        
-        
-        
-        
         <div class="col">
             <img src="https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image19.jpg" alt="reach-me" class="img-fluid w-75 shadow rounded-top" loading="lazy">
           <div class="row" id="contact"><i class="bi bi-telephone"><p class="lead">066 267 3498</p></i></div>
