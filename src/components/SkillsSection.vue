@@ -1,12 +1,14 @@
 <template>
     <div class="container" skill>
         <div class="row">
-            <h2 class="display-2">Skills</h2>
+            <h2 class="display-2" data-aos="zoom-in-down">Skills</h2>
         </div>
-        <div class="row gap-2 justify-content-center" v-if="skills?.length">
+        <div class="row gap-2 justify-content-center" v-if="skills?.length" skills>
             <div v-for="skill in skills" :key="skill.id">
-                    <h4 class="card-title">{{ skill.language }}</h4>
+                <div id="iconss">
                     <box-icon type='logo' :name='skill.name' :color="skill.color" id="icon"></box-icon>
+                </div>
+                    <h4 class="card-title">{{ skill.language }}</h4>
                     <p class="lead">{{ skill.level }}</p>
             </div>
         </div>
@@ -33,4 +35,9 @@ export default {
 #icon {
     font-size: 50%;
 }
+
+[skills] {
+    display: flex;
+}
+
 </style>

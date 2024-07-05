@@ -1,7 +1,7 @@
 <template>
     <div class="container" resume-page>
         <div class="row">
-            <h2 class="display-2">Resume</h2>
+            <h2 class="display-2" data-aos="zoom-in-down">Resume</h2>
         </div>
         <div class="row" resume>
         <div class="row gap-2 justify-content-center" v-if="education?.length" data-aos="fade-up"
@@ -63,6 +63,8 @@ export default {
 }
 
 [cards] {
+    box-shadow: 0 0.5rem 1rem rosybrown;
+    background-color: rgb(208, 188, 177);
     width: 40%;
 }
 .img-fluid {

@@ -1,6 +1,6 @@
 <template>
   <div class="container" reach-me>
-    <h3 class="display-3">Reach Me</h3>
+    <h2 class="display-2" data-aos="zoom-in-down">Reach Me</h2>
     <div class="row align-items-center">
       <div class="col" id="contact-page">
         <form action="https://formspree.io/f/mkgwnjva" method="POST">

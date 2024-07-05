@@ -1,14 +1,14 @@
 <template>
     <div class="container">
         <div class="row">
-            <h2 class="display-2">Resume</h2>
+            <h2 class="display-2" data-aos="zoom-in-down">Projects</h2>
         </div>
         <div class="row" resume>
         <div class="row gap-2 justify-content-center" v-if="projects?.length">
             <Card v-for="project in projects" :key="project.id">
                 <template #cardHeader>
                     <h6>{{ project.project }}</h6>
-                    <!-- <img :src="project.imgUrl" :alt="project.project" loading="lazy" class="img-fluid"> -->
+                    <img :src="project.imgUrl" :alt="project.project" loading="lazy" class="img-fluid">
                 </template>
                 <template #cardBody>
                     <a class="m-2" :href="project.Github" target="_blank" ><button class="btn btn-danger pro-link" btn2>Github</button></a>

@@ -1,7 +1,7 @@
 <template>
   <div class="container" testimonials>
     <div class="row">
-      <h2 class="display-2">Testimonials</h2>
+      <h2 class="display-2" data-aos="zoom-in-down">Testimonials</h2>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" v-if="testimonials?.length">
       <div class="carousel-indicators">

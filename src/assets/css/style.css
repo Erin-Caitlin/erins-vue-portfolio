@@ -33,9 +33,6 @@
       background-attachment: fixed;
       background-blend-mode: soft-light;
       font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -50,12 +47,11 @@
     z-index: 10;
   }
 
-h1, h2, h3, h5{
+h1, h2, h3,h4, h5, h6{
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
     text-decoration-color: #6642428a;
-    /* color: #6642428a; */
   }
 
 nav {
@@ -69,13 +65,9 @@ nav a {
 
         &:hover {
           transform: scale(1.2);
-          /*  */
           color: var(--alternative);
           border-radius: .2rem;
         }
-    
-    /* color: var(--secondary); */
-        
 }
 
 .nav-links {
@@ -87,10 +79,6 @@ nav a {
     width: 95%;
 }
 
-
-/* section {
-    scroll-margin-block: 6rem;
-} */
 /* Footer */
 footer {
     padding-top: 2rem;
@@ -152,11 +140,6 @@ img[alt='logo'] {
     color: var(--primary);
     border-color: var(--alternative);
 }
-
-/* Contact form placeholder */
-/* ::placeholder {
-    color: var(--secondary);
-} */
 
 #btn-send,
 #btn-clear {
