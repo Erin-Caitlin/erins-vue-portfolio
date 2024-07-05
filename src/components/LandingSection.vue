@@ -34,8 +34,9 @@ const store = useStore()
 <style>
 [landing] {
   background: rgb(177, 148, 148)
-        url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg)
-        no-repeat center ;
+        /* url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg)
+        no-repeat center */
+         ;
         background-size: cover;
         background-blend-mode: soft-light;
 }
