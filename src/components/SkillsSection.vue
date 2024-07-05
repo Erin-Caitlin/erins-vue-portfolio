@@ -18,10 +18,12 @@
     </div>
 </template>
 <script>
+import Spinner from './Spinner.vue'
 import Card from './Card.vue'
 export default {
     components: {
-        Card
+        Card,
+        Spinner
     },
     computed: {
         skills() {
@@ -34,17 +36,16 @@ export default {
 }
 </script>
 <style scoped>
-[skill] {
-    margin: 2rem auto 2rem;
-    background: rgb(177, 148, 148)
+/* [skill] { */
+    /* margin-block: 10rem; */
+    /* background: rgb(177, 148, 148)
     url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image31.jpg) no-repeat top;
     background-size: cover;
-    /* height: 100vh; */
     background-blend-mode: soft-light;
     border-radius: .5rem;
-    padding: 0;
+    padding: 0; */
 
-}
+/* } */
 
 /* #icon {
     font-size: 2rem;

@@ -13,7 +13,7 @@
                 <Spinner v-else/>
             </div>
             <div id="about-btn">
-                <!-- <button type="button" id="about-direct"><a href="#about">About Me</a></button> -->
+              <button class="btn pro-link"><a href="#about" class="m-2" >Get to know me</a></button>
             </div>
         </div>
     </div>
@@ -32,20 +32,19 @@ const store = useStore()
     })
 </script>
 <style>
-[landing] {
-  background: rgb(177, 148, 148)
-        /* url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg)
-        no-repeat center */
-         ;
-        background-size: cover;
-        background-blend-mode: soft-light;
-}
-
 [page] {
   display: flex;
   justify-content: center;
   width: 95%;
 }
+ .m-2 {
+  text-decoration: none;
+  color: white;
+ }
 
+ .btn {
+  background-color: rgba(245, 245, 220, 0.521);
+ }
 
+ 
 </style>
