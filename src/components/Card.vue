@@ -22,7 +22,9 @@
 .card {
     margin: 1rem;
     width: 20rem;
-    /* column-gap: 5rem; */
 }
-
+.carousel-item .card-body{
+    height: 200px; 
+    overflow-y: auto;
+}
 </style>

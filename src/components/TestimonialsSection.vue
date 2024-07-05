@@ -66,5 +66,18 @@ export default {
 }
 .img-fluid {
     width: 10rem;
+    border-radius: .5rem;
+}
+
+
+.card {
+    /* margin: 0 2rem 3rem;
+    box-shadow: 0 0.5rem 1rem rosybrown;
+    background-color: rgb(208,188,177);
+    height:80%;
+    overflow-y: auto; */
+
+  box-shadow: 0 0.5rem 1rem rosybrown;
+  background-color: rgb(208, 188, 177);
 }
 </style>

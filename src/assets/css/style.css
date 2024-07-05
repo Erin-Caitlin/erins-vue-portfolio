@@ -2,6 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 ::after,
@@ -25,15 +26,16 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: var(--primary);
-    background-color: rgb(177, 148, 148);
     overflow: hidden;
     background: rgb(177, 148, 148)
       url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg) no-repeat center;
       background-size: cover;
       background-attachment: fixed;
-      /* height: 100vh; */
       background-blend-mode: soft-light;
-      border-radius: .5rem;
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -63,19 +65,22 @@ nav {
 nav a {
     font-weight: bold;
     color: var(--primary);
-    /* color: var(--secondary); */
-        transition: all 0.4s;
+    transition: all 0.4s;
 
         &:hover {
           transform: scale(1.2);
-          background-color: var(--secondary);
+          /*  */
           color: var(--alternative);
           border-radius: .2rem;
         }
+    
+    /* color: var(--secondary); */
+        
 }
 
 .nav-links {
     width: 95%;
+    background-color: var(--secondary);
 }
 
 .navbarNav {
@@ -110,7 +115,7 @@ img[alt='logo'] {
 /* wrapper */
 :is(.wrapper) {
     display: grid;
-    grid-template-rows: auto minmax(100dvh, 100%) auto;
+    grid-template-rows:  minmax(100dvh, 100%) auto;
 }
 
 /* media query */
@@ -137,7 +142,6 @@ img[alt='logo'] {
     justify-content: start;
 }
 
-
 #name,
 #email,
 #message{
@@ -156,6 +160,7 @@ img[alt='logo'] {
 
 #btn-send,
 #btn-clear {
+    margin: .2rem;
     padding: 1rem;
     border-radius: .2rem;
     width: 10rem;
@@ -185,3 +190,13 @@ img[alt='logo'] {
 [reach-me] {
     background: linear-gradient(to bottom, #ae83819a, #6642428a);
 }
+div[landing]{
+    margin-top: 4rem;
+}
+
+[btn2]:hover {
+          transform: scale(1.2);
+          background-color: var(--secondary);
+          color: var(--alternative);
+          border-radius: .2rem;
+        }

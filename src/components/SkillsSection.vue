@@ -4,25 +4,19 @@
             <h2 class="display-2">Skills</h2>
         </div>
         <div class="row gap-2 justify-content-center" v-if="skills?.length">
-            <Card v-for="skill in skills" :key="skill.id">
-                <template #cardHeader>
+            <div v-for="skill in skills" :key="skill.id">
                     <h4 class="card-title">{{ skill.language }}</h4>
-                </template>
-                <template #cardBody>
                     <box-icon type='logo' :name='skill.name' :color="skill.color" id="icon"></box-icon>
                     <p class="lead">{{ skill.level }}</p>
-                </template>
-            </Card>
+            </div>
         </div>
         <Spinner v-else />
     </div>
 </template>
 <script>
 import Spinner from './Spinner.vue'
-import Card from './Card.vue'
 export default {
     components: {
-        Card,
         Spinner
     },
     computed: {
@@ -36,18 +30,7 @@ export default {
 }
 </script>
 <style scoped>
-/* [skill] { */
-    /* margin-block: 10rem; */
-    /* background: rgb(177, 148, 148)
-    url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image31.jpg) no-repeat top;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    border-radius: .5rem;
-    padding: 0; */
-
-/* } */
-
-/* #icon {
-    font-size: 2rem;
-} */
+#icon {
+    font-size: 50%;
+}
 </style>
