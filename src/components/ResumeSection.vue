@@ -76,9 +76,11 @@
 
 <script>
 import Card from '@/components/Card.vue';
+import Spinner from './Spinner.vue'
 export default {
     components: {
-        Card
+        Card,
+        Spinner
     },
     computed: {
         education() {
