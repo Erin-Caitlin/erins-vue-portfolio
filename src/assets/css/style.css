@@ -47,7 +47,7 @@
     z-index: 10;
   }
 
-h1, h2, h3,h4, h5, h6{
+h1, h2, h3,h4, h6{
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
@@ -146,7 +146,7 @@ img[alt='logo'] {
     margin: .2rem;
     padding: 1rem;
     border-radius: .2rem;
-    width: 10rem;
+    width: 9.7rem;
     background-color: beige;
     color: var(--primary);
     border-color: var(--alternative);
@@ -183,3 +183,14 @@ div[landing]{
           color: var(--alternative);
           border-radius: .2rem;
         }
+/* 
+#icon {
+   gap: 5rem;
+    size: 50%;
+     transform: scale(1.2);
+     transition: all 0.4s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+} */

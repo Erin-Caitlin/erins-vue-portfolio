@@ -9,7 +9,7 @@
         <div class="col">
             <div class="animate__animated animate__fadeInTopLeft" id="details">
                 <h2 class="display-2">Erin Caitlin Williams</h2>
-                <h4 class="display-4" v-if="jobTitle" title>{{ jobTitle[0].title }}</h4>
+                <h5 class="display-5" v-if="jobTitle" title>{{ jobTitle[0].title }}</h5>
                 <Spinner v-else/>
             </div>
             <div id="links">
