@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" reach-me>
     <h3 class="display-3">Reach Me</h3>
     <div class="row align-items-center">
       <div class="col" id="contact-page">

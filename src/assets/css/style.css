@@ -27,7 +27,13 @@
     color: var(--primary);
     background-color: rgb(177, 148, 148);
     overflow: hidden;
-    
+    background: rgb(177, 148, 148)
+      url(https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image26.jpg) no-repeat center;
+      background-size: cover;
+      background-attachment: fixed;
+      /* height: 100vh; */
+      background-blend-mode: soft-light;
+      border-radius: .5rem;
 }
 
 ::-webkit-scrollbar {
@@ -35,7 +41,7 @@
 }
 
 :is(.navbar, footer) {
-    background-color: var(--awesome);
+    background-color: rgb(230, 220, 215);
 }
 
 .navbar {
@@ -45,8 +51,9 @@
 h1, h2, h3, h5{
     font-family: "Italiana", sans-serif;
     font-weight: 400;
-    font-style: normal;
     filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    text-decoration-color: #6642428a;
+    /* color: #6642428a; */
   }
 
 nav {
@@ -56,9 +63,22 @@ nav {
 nav a {
     font-weight: bold;
     color: var(--primary);
+    /* color: var(--secondary); */
+        transition: all 0.4s;
+
+        &:hover {
+          transform: scale(1.2);
+          background-color: var(--secondary);
+          color: var(--alternative);
+          border-radius: .2rem;
+        }
 }
 
 .nav-links {
+    width: 95%;
+}
+
+.navbarNav {
     width: 95%;
 }
 
@@ -146,7 +166,6 @@ img[alt='logo'] {
 
 [title] {
     font-style: italic;
-    /* filter: drop-shadow(0.1rem 0.1rem 0.1rem black); */
 }
 
 /* Animation */
@@ -158,3 +177,11 @@ img[alt='logo'] {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
   }
+
+  /* Background */
+[landing],
+[resume-page],
+[testimonials],
+[reach-me] {
+    background: linear-gradient(to bottom, #ae83819a, #6642428a);
+}

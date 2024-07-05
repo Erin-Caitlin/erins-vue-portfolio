@@ -21,10 +21,12 @@
 </div>
 </template>
 <script>
+import Spinner from './Spinner.vue'
 import Card from '@/components/Card.vue';
 export default {
     components: {
-        Card
+        Card,
+        Spinner
     },
     computed: {
         projects() {
