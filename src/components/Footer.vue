@@ -1,5 +1,5 @@
 <template>
-  <footer class="container-fluid">
+  <footer id="footer" class="container-fluid">
     <div class="row">
         <p class="lead">Erin's Portfolio &copy; <span class="shadow">{{ cYear }}</span></p>
     </div>
@@ -18,5 +18,7 @@ export default {
 </script>
 
 <style>
-
+#footer{
+  height: 50px ;
+}
 </style>

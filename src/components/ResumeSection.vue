@@ -4,7 +4,8 @@
             <h2 class="display-2">Resume</h2>
         </div>
         <div class="row" resume>
-        <div class="row gap-2 justify-content-center" v-if="education?.length">
+        <div class="row gap-2 justify-content-center" v-if="education?.length" data-aos="fade-up"
+        data-aos-duration="2000">
             <Card v-for="education in education" :key="education.id" cards>
                 <template #cardHeader>
                     <h4 class="card-title">{{ education.school }}</h4>
@@ -15,8 +16,9 @@
                 </template>
             </Card>
         </div>
-        <div class="row gap-2 justify-content-center" v-if="experiences?.length">
-            <Card v-for="experiences in experiences" :key="experiences.id">
+        <div class="row gap-2 justify-content-center" v-if="experiences?.length" data-aos="fade-up"
+        data-aos-duration="2000">
+            <Card v-for="experiences in experiences" :key="experiences.id" cards>
                 <template #cardHeader>
                     <h4 class="card-title">{{ experiences.company }}</h4>
                 </template>
@@ -61,7 +63,7 @@ export default {
 }
 
 [cards] {
-    width: 20%;
+    width: 40%;
 }
 .img-fluid {
     aspect-ratio: 1;

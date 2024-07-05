@@ -1,8 +1,8 @@
 <template>
   <div class="container-fluid p-0" landing>
-    <div class="row vh-100 align-items-center" page>
+    <div class="row vh-100 align-items-center animate__animated animate__fadeInTopLeft" page>
       <div class="col">
-        <div class="animate__animated animate__fadeInTopLeft">
+        <div>
           <img src="https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image24.jpg" alt="profile" class="img-fluid w-75 shadow rounded-top" loading="lazy"> 
         </div>
         </div>
@@ -12,8 +12,9 @@
                 <h4 class="display-4" v-if="jobTitle" title>{{ jobTitle[0].title }}</h4>
                 <Spinner v-else/>
             </div>
-            <div id="about-btn">
-              <button class="btn pro-link"><a href="#about" class="m-2" >Get to know me</a></button>
+            <div id="links">
+              <button class="btn pro-link"><a href="#about" class="m-2" >ABOUT ME</a></button>
+              <!-- <button class="btn pro-link"><a href="#reach-me" class="m-2" >CONTACT ME</a></button> -->
             </div>
         </div>
     </div>
@@ -46,5 +47,8 @@ const store = useStore()
   background-color: rgba(245, 245, 220, 0.521);
  }
 
+ #links {
+  margin: 1rem;
+ }
  
 </style>

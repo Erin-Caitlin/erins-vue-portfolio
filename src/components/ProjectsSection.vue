@@ -8,11 +8,11 @@
             <Card v-for="project in projects" :key="project.id">
                 <template #cardHeader>
                     <h6>{{ project.project }}</h6>
-                    <img :src="project.imgUrl" :alt="project.project" loading="lazy" class="img-fluid">
+                    <!-- <img :src="project.imgUrl" :alt="project.project" loading="lazy" class="img-fluid"> -->
                 </template>
                 <template #cardBody>
-                    <a class="m-2" :href="project.Github" target="_blank" ><button class="btn btn-danger pro-link">Github</button></a>
-                    <a class="m-2" :href="project.Vercel" target="_blank" ><button class="btn btn-danger pro-link">Vercel</button></a>
+                    <a class="m-2" :href="project.Github" target="_blank" ><button class="btn btn-danger pro-link" btn2>Github</button></a>
+                    <a class="m-2" :href="project.Vercel" target="_blank" ><button class="btn btn-danger pro-link" btn2>Vercel</button></a>
                 </template>
             </Card>
         </div>
@@ -40,9 +40,6 @@ export default {
 </script>
 
 <style scoped>
-/* [resume] {
-    display: flex;
-} */
 
 .img-fluid {
     aspect-ratio: 1;
@@ -52,6 +49,13 @@ export default {
 }
 
 .card {
-    background-color: beige;
+    box-shadow: 0 0.5rem 1rem rosybrown;
+    background-color: rgb(208, 188, 177);
+}
+
+[btn2] {
+    background-color: #ae8381;
+    border: none;
+    transition: all 0.4s;
 }
 </style>
